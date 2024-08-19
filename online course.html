@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnVibe Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">LearnVibe Academy</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="overlay">
+            <div class="container">
+                <h1>Ignite Your Passion for Learning</h1>
+                <p>Discover the best online courses to advance your skills and knowledge.</p>
+                <a href="#courses" class="cta">Explore Courses</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About LearnVibe Academy</h2>
+            <p>LearnVibe Academy is dedicated to providing top-notch education through online courses designed for modern learners. Our mission is to empower you with knowledge and skills that drive success.</p>
+            <p>Our courses are crafted by industry experts and designed to fit into your busy schedule, helping you achieve your educational goals effortlessly.</p>
+        </div>
+    </section>
+
+    
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Featured Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Graphic Design Basics</h3>
+                    <p>Learn the fundamentals of graphic design and unleash your creativity.</p>
+                    <a href="#" class="cta">Discover More</a>
+                </div>
+                <div class="course-item">
+                    <h3>UX/UI Design Mastery</h3>
+                    <p>Master the principles of UX/UI design and create user-friendly interfaces.</p>
+                    <a href="#" class="cta">Discover More</a>
+                </div>
+                <div class="course-item">
+                    <h3>Python Programming</h3>
+                    <p>Get started with Python and develop your coding skills for various applications.</p>
+                    <a href="#" class="cta">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us anytime. We're here to help!</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LearnVibe Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: green;
+}
+
+
+header {
+    background: black;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #ff9a8b;
+    border-radius: 5px;
+}
+
+
+.hero {
+    background: url('hero-image3.jpg') no-repeat center center/cover;
+    color:white;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background:green;
+    color: #ff6f61;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero .cta:hover {
+    background: #ff6f61;
+    color: #fff;
+}
+
+/* About Us Section Styling */
+.about {
+    background: #fff;
+    color: black;
+    padding: 80px 0;
+}
+
+.about .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Courses Section Styling */
+.courses {
+    background: white;
+    padding: 80px 0;
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.course-item h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+.course-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.course-item .cta {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.course-item .cta:hover {
+    background: #ff9a8b;
+}
+
+.contact {
+    background: #fff;
+    color: #333;
+    padding: 80px 0;
+}
+
+.contact .container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff9a8b;
+}
+
+
+footer {
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
